@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #232946;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    max-width: 350px;
+    flex-wrap: wrap;
+    
+}
+.option{
+    width: 150px;
+    height: 150px;
+    background-color: #EEBBC3;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: #efd3d7;
+}
+.option:nth-child(2), .option:nth-child(4){
+    margin-bottom: 15px;
+}
