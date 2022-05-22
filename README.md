@@ -1,4 +1,5 @@
 # Incarcerated Joker
+![](banner.jpg)
 A multi-layered web-based user authentication system which incorporates behavioural biometrics.
 
 ## Description
@@ -10,8 +11,8 @@ This project has been built using scripting languages such as PHP, HTML, JavaScr
 
 ## Contributors
 This project has been contributed to by:
-- Anant Chauhan: https://github.com/Anant1711
-- Arpan Thomas: https://github.com/Arpanthomas1121
-- Athena George: https://github.com/AthenaXv7
-- Aaliya Anil: https://github.com/KikixJ7
 
+<a href="https://github.com/Anant1711/"><img src="https://avatars.githubusercontent.com/u/63709820?v=4" title="Anant" width="80" height="80"></a>
+<a href="https://github.com/Arpanthomas1121"><img src="https://avatars.githubusercontent.com/u/66914302?v=4" title="Arpan" width="80" height="80"></a>
+<a href="https://github.com/KikixJ7"><img src="https://avatars.githubusercontent.com/u/94973365?v=4" title="Aaliya" width="80" height="80"></a>
+<a href="https://github.com/AthenaXv7"><img src="https://avatars.githubusercontent.com/u/92224478?v=4" title="Athena" width="80" height="80"></a>
