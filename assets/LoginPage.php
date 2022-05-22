@@ -47,7 +47,7 @@
             z.style.left="0px"; 
         }
         function change(){
-            window.location.href = "tiles.html";
+            window.location.href = "tiles.php";
         }
         </script>
 </body>

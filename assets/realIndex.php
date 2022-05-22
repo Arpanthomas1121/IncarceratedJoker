@@ -11,12 +11,12 @@
    <header>
        <div class="logout">
         <ul>
-            <li><a href="LoginPage.html">Log Out</a></li>
+            <li><a href="LoginPage.php">Log Out</a></li>
         </ul>
        </div>
        <div class="logo">
            <ul>
-               <li><a href="realIndex.html">Team: CyberV</a></li>
+               <li><a href="realIndex.php">Team: CyberV</a></li>
            </ul>
        </div>
        <div class="main-body">
