@@ -20,7 +20,7 @@
                 <input type="text" class="input-field" placeholder="User Id" required>
                 <input type="text" class="input-field" placeholder="Enter Password" required>
                 <br></br>
-                <button type="submit" class="submit-btn">Log In</button>
+                <button type="submit" class="submit-btn" onclick="change()">Log In</button>
             </form>
 
             <form id="register" class="inputs">
@@ -28,7 +28,7 @@
                 <input type="email" class="input-field" placeholder="Email Id" required>
                 <input type="text" class="input-field" placeholder="Enter Password" required>
                 <br></br>
-                <button type="submit" class="submit-btn">Register</button>
+                <button type="submit" class="submit-btn" onclick="change()">Register</button>
             </form>
         </div>
     </div>
@@ -45,6 +45,9 @@
             x.style.left="50px";
             y.style.left="450px";
             z.style.left="0px"; 
+        }
+        function change(){
+            window.location.href = "tiles.html";
         }
         </script>
 </body>
