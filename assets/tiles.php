@@ -9,10 +9,10 @@
     </head>
     <body>
         <div class="container">
-            <button class="option"></button>
-            <button class="option"></button>
-            <button class="option"></button>
-            <button class="option"></button>
+            <button class="option" name="subject" type="submit" value="1"></button>
+            <button class="option" name="subject" type="submit" value="2"></button>
+            <button class="option" name="subject" type="submit" value="3"></button>
+            <button class="option" name="subject" type="submit" value="4"></button>
             
 </div>
     </body>
