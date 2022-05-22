@@ -9,9 +9,11 @@
     </head>
     <body>
         <div class="container">
-            <div class="option"></div>
-            <div class="option"></div>
-            <div class="option"></div>
-            <div class="option"></div>
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+            
+</div>
     </body>
 </html>
