@@ -6,7 +6,7 @@ We have built a 2-step user verification system which uses MFA to validate the u
 - Username/Password
 - Behavioural Biometrics
 
-This project has been built using scripting languages such as HTML, PHP and CSS.
+This project has been built using scripting languages such as PHP, HTML, JavaScript and CSS.
 
 ## Contributors
 This project has been contributed to by:
