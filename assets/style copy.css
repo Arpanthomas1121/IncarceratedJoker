@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Macondo-Regular;
+  src: url(fonts/Macondo-Regular.ttf);
+}
+body {
+  background-color: #232946;
+  margin: 10%;
+  color:rgb(174, 255, 0) ;
+  font-size: larger;
+}
+.container {
+  text-align: center;
+  font-size: medium;
+  position: relative;
+  margin: 20%;
+  padding: 40px;
+  width: 50%;
+  height: inherit;
+  background: #EEBBC3;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  box-shadow: 1px 9px 17px -4px rgba(144, 39, 189, 0.527);
+}
+
+.container .button {
+  font-size: large
+}
+
+h1 {
+  font-family: Macondo-Regular;
+  font-size: 4em;
+  margin-block-start: 0;
+  margin-block-end: 0.4em;
+  color: rgb(204, 67, 40);
+}
+
+h2 {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  margin-block-start: 0;
+  margin-block-end: 0.4em;
+  color: #af296c;
+}
+span{
+  font-family: Macondo-Regular;
+  margin: 1%auto;
+  text-align: center;
+  color: #042bec;
+  font-weight: 900;
+}
+
+.form-💢 {
+  /*form control*/
+  margin-bottom: lem;
+  transition: all .3s;
+  padding: 10px;
+}
+
+.🎛️ {
+  /*label*/
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  color: black;
+  padding: 10px;
+  font-weight: 900;
+  text-align: center;
+  display: inline ;
+  opacity: 1;
+  transform-origin: 0 0;
+  transform: rotate(-10deg) translateY(-2.3em);
+  transition: all .3s;
+}
+
+.✨ {
+    width:90%;
+    padding:10px;
+    margin:5px;
+    border-left:0;
+    border-top:0;
+    border-right:0;
+    border-bottom:1px solid#999;
+    outline:none;
+    background:transparent;
+}
+.✨::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(202, 39, 15);
+  opacity: 0.5; /* Firefox */
+}
+
+
+.form-💢:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: salmon;
+}
+
+.form-💢:focus-within {
+  transform: scale(1.2, 1.2);
+}
+
+.form-💢:focus,
+.form-💢:not(:placeholder-shown)+.🎛️ {
+  transform: translateY(-3 em) scale(.8);
+}
+
+.button{
+  align: center;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  height: fit-content;
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(76, 0, 130, 0.781);
+  border: 2px solid rgb(204, 67, 40);
+  border-radius: 10px;
+  border-style: none none solid none;
+}
+
