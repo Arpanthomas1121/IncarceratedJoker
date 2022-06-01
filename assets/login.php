@@ -35,27 +35,27 @@
 
   if (isset($_POST['username']) && isset($_POST['password'])) {
     $uname = $_POST['username'];
-    $modpass =hash('sha256', $_POST['password']);
+    $modpass = hash('sha256', $_POST['password']);
     $password = $modpass;
-    $pattern = '/(\')+/i';
-    $replacement = ' ';
+    $pattern = '/(\')|[ ]/i'; // prevent SQL & white space
+    $replacement = 'x';
     $uname = preg_replace($pattern, $replacement, $uname);
     $query = mysqli_query($connection, "SELECT * FROM sensdata WHERE username ='$uname' AND password ='$password'") or die("Query Unsuccessfull:" . mysqli_error($connection));
-   if ($query_run) {
+    if ($query_run) {
       echo "Login Successfull";
-      $_SESSION['username']=$uname;
-     } else {
+      $_SESSION['username'] = $uname;
+    } else {
       echo "Login failed";
       session_destroy();
     }
-    $num_rows=mysqli_num_rows($query);
-    $row=mysqli_fetch_array($query);
+    $num_rows = mysqli_num_rows($query);
+    $row = mysqli_fetch_array($query);
 
-    if($num_rows > 0)
-      {
-        $_SESSION["id"]=$row['Email'];
-        header("Location: 2FA.php?id=".$_SESSION["id"]);
-      }
+    if ($num_rows > 0) {
+      $id = $row['Email'];
+      echo $id;
+      header("Location: tiles.php?id=$id");
+    }
   }
 
   ?>
