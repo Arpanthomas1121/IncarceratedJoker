@@ -37,36 +37,31 @@
       </form>
     </div>
   </div>
-  <?php
+ <?php
   include "connection.php";
   session_start();
-
+  session_unset();
   if (isset($_POST['username']) && isset($_POST['password'])) {
     $uname = $_POST['username'];
+    $name = $_POST['Name'];
+    $email = $_POST['email'];
     $modpass =hash('sha256', $_POST['password']);
     $password = $modpass;
-    $pattern = '/(\')+/i';
-    $replacement = ' ';
+    $pattern = '/(\')|[ ]/i';// prevent SQL & white space
+    $replacement = 'x';
     $uname = preg_replace($pattern, $replacement, $uname);
-    $query = mysqli_query($connection, "SELECT * FROM sensdata WHERE username ='$uname' AND password ='$password'") or die("Query Unsuccessfull:" . mysqli_error($connection));
-   if ($query_run) {
-      echo "Login Successfull";
+    $query = mysqli_query($connection, "INSERT INTO `sensdata` (`name`, `username`, `password`, `Email`) VALUES ('$name', '$uname', '$password','$email')") or die("Query Unsuccessfull:" . mysqli_error($connection));
+    if (!$query_run) {
+      echo 'Registration Successfull!! '.'<br> Welcome,'. $name.'!';
       $_SESSION['username']=$uname;
-     } else {
-      echo "Login failed";
+      header("Location: regtiles.php?id=$uname");
+    } else {
+      echo "Registration failed";
       session_destroy();
     }
-    $num_rows=mysqli_num_rows($query);
-    $row=mysqli_fetch_array($query);
-
-    if($num_rows > 0)
-      {
-        $_SESSION["id"]=$row['Email'];
-        header("Location: 2FA.php?id=".$_SESSION["id"]);
-      }
-  }
-
+}
   ?>
+
 
   <script></script>
 </body>
